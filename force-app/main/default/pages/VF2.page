@@ -1,0 +1,16 @@
+<apex:page standardController="Account">
+  <apex:pageBlock title="account details">
+  <apex:pageBlockSection title="name">
+      {!Account.name}<br/>
+  </apex:pageBlockSection>
+   <apex:pageBlockSection title="Industry">
+      {!Account.industry}<br/>
+   </apex:pageBlockSection>
+   <apex:pageBlockSection title="phone">
+      {!Account.phone}<br/>
+   </apex:pageBlockSection>        
+  </apex:pageBlock>
+  <apex:pageBlock title="Fax number" >
+      {!Account.fax}
+  </apex:pageBlock>
+</apex:page>

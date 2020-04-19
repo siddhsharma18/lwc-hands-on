@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" >
+    <force:canvasApp developerName="capp2" namespacePrefix="gw19" />
+</aura:component>

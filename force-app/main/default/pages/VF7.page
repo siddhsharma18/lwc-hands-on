@@ -1,0 +1,6 @@
+<apex:page controller="c2">
+
+{!a.Name}<br/>
+{!a.Industry}<br/>
+
+</apex:page>

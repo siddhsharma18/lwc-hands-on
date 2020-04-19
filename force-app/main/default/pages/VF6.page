@@ -1,0 +1,5 @@
+<apex:page controller="c1">
+  
+  {!s}<br/>
+  {!p}<br/>
+</apex:page>

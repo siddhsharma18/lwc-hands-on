@@ -1,0 +1,19 @@
+<apex:page controller="MyController1">
+    <apex:form >
+        <apex:pageBlock title="My Content" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!getPosRecords}" value="Get Positions"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="My Positions" columns="2">
+            <apex:pageBlockTable value="{!posList}" var="item">
+
+            <apex:column value="{!item.name}"/> 
+            <apex:column value="{!item.Hiring_Manager__c}"/> 
+
+
+        </apex:pageBlockTable> 
+
+           </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

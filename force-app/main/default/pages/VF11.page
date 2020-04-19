@@ -1,0 +1,31 @@
+<apex:page controller="c5" >
+<apex:form >
+<apex:pageBlock title="List of accounts by Type" >
+<apex:tabPanel switchType="ajax">
+    <apex:tab label="Channel Accounts" labelWidth="300">
+        <apex:pageBlockTable value="{!ChannelActs}" var="a">
+        <apex:column value="{!a.name}"/>
+        <apex:column value="{!a.Type}"/>
+        <apex:column value="{!a.Industry}"/>
+        <apex:column value="{!a.phone}"/>
+        <apex:column value="{!a.fax}"/>
+        
+        </apex:pageBlockTable>    
+    </apex:tab>
+    <apex:tab label="Direct acount" labelWidth="300">
+        <apex:pageBlockTable value="{!directActs}" var="b">
+        <apex:column value="{!b.name}"/>
+        <apex:column value="{!b.type}"/>
+        <apex:column value="{!b.industry}"/>
+        <apex:column value="{!b.phone}"/>
+        <apex:column value="{!b.fax}"/>
+        
+        </apex:pageBlockTable>
+    </apex:tab>
+</apex:tabPanel>
+<apex:pageBlockButtons >
+    <apex:commandButton value="Go to Section View" action="{!section}"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>  
+</apex:page>

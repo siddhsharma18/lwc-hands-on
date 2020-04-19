@@ -1,0 +1,17 @@
+<aura:component >
+    <aura:handler event="c:ApplicationEvent" action="{!C.handleApplicationEvent}"/>
+    
+    <aura:registerEvent name="componentEvent" type="c:ComponentEvent"/>
+    <aura:handler name="componentEvent" action="{!C.handleComponentEvent}" phase="capture"/>
+    
+    <lightning:card >
+    	<aura:set attribute="title">Component B</aura:set>
+        <div class="slds-grid slds-p-around--medium">
+            <lightning:button label="Fire application event" onclick="{!c.fireApplicationEvent}"/>
+            <lightning:button label="Fire component event" onclick="{!c.fireComponentEvent}"/>
+        </div>
+        <div class="slds-m-around--large">
+        	<c:Component_D />
+        </div>
+    </lightning:card>
+</aura:component>

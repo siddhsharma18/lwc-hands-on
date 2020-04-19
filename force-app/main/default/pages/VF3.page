@@ -1,0 +1,11 @@
+<apex:page standardController="account">
+    <apex:pageBlock title="{!account.name}">
+        <apex:pageblockSection title="account details" columns="1" collapsible="false" >
+            <apex:detail relatedList="false"/>
+            <apex:relatedList list="opportunities"/>
+            <apex:relatedList list="cases"/>
+        </apex:pageblockSection>
+        
+    </apex:pageBlock>
+  
+</apex:page>

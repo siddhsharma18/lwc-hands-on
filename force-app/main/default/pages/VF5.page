@@ -1,0 +1,15 @@
+<apex:page standardController="opportunity" >
+<apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection title="view opportunity Details">
+            {!Opportunity.Name}<br/>
+            {!Opportunity.Amount}<br/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="edit opportunity Details">
+             <Apex:inputField value="{!opportunity.Name}"/> <br/>
+             <Apex:inputField value="{!opportunity.Amount}"/> <br/>
+            <apex:commandButton value="save now" action="{!save}"/>     
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>  
+</apex:page>

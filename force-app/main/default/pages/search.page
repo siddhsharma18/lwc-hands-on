@@ -1,0 +1,10 @@
+<apex:page controller="AccNameSearchController">
+  <Apex:form >
+      Search for a account name by entering account name
+      <apex:pageBlock >
+          Search Text :<br/>
+          <apex:inputText value="{!inputText}" label="Search Text"/>
+          <apex:commandButton value="search" action="{!searchAccounts}"/>
+      </apex:pageBlock>
+  </Apex:form>
+</apex:page>

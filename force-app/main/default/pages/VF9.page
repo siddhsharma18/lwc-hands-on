@@ -1,0 +1,9 @@
+<apex:page controller="c4">
+    <apex:pageBlock title="Opprtunity Details(closed)">
+        <apex:pageBlockTable value="{!opp}" var="o">
+            <apex:column value="{!o.name}"/>
+            <apex:column value="{!o.amount}"/>
+            <apex:column value="{!o.stageName}"/>
+            </apex:pageBlockTable>
+       </apex:pageBlock>
+  </apex:page>

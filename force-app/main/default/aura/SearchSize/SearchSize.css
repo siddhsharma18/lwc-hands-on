@@ -1,0 +1,58 @@
+.THIS .rangeSelector {
+    width: 100% !important;
+}
+.THIS .notification-icon .slds-icon-text-default{
+    fill: #ffffff;
+    margin-top: 0rem;
+    overflow: hidden;
+    margin-right: .75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1;
+}
+.THIS .orgSettingTile {
+    background-color: #FFF;
+    border-radius: .25rem;
+    border: .1rem solid #E0E5EE;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.THIS .searchResultsSize{
+    padding-left: .5rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    color: #063B66;
+}
+.THIS .footerText{
+	color: #191f1e;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+.THIS .orgSettingLabel {
+    font-size: 2.2rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    color: #063B66;
+}     
+
+.THIS .rangeslider--horizontal {
+    height: 5px;
+    width: 100%;
+}
+
+.THIS .rangeslider {
+    background: #e6e6e6;
+    position: relative;
+}
+
+.THIS .inputBox {
+    background-color: white;
+    color: #16325c;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    width: 43px;
+    transition: border 0.1s linear, background-color 0.1s linear;
+    display: inline-block;
+    padding: 6px 9px;
+}

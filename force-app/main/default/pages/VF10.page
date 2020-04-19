@@ -1,0 +1,31 @@
+<apex:page controller="c5" sidebar="false">
+<apex:form >
+  <apex:pageBlock title=" List of Direct  & Channel Accounts">
+  <apex:pageBlockSection title="Direct account">
+  <apex:pageBlock >
+      <apex:pageBlockTable value="{!directacts}" var="a">
+          <apex:column value="{!a.name}"/>
+          <apex:column value="{!a.type}"/>
+          <apex:column value="{!a.industry}"/>
+          <apex:column value="{!a.phone}"/>
+          <apex:column value="{!a.fax}"/>
+      </apex:pageBlockTable>
+  </apex:pageBlock>    
+   </apex:pageBlockSection>
+   <apex:pageBlockSection title="Channel Accounts">
+   <apex:pageBlock >
+   <apex:pageBlockTable value="{!channelacts}" var="b">
+          <apex:column value="{!b.name}"/>
+          <apex:column value="{!b.type}"/>
+          <apex:column value="{!b.industry}"/>
+          <apex:column value="{!b.phone}"/>
+          <apex:column value="{!b.fax}"/>
+      </apex:pageBlockTable>
+   </apex:pageBlock>
+   </apex:pageBlockSection>
+   <apex:pageBlockButtons >
+       <apex:commandButton value="Go to TAB view" action="{!tab}"/>
+   </apex:pageBlockButtons>
+   </apex:pageBlock>
+ </apex:form>       
+</apex:page>
